@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, rgb(18, 18, 18), rgb(34, 34, 34)); 
+    color: rgb(200, 200, 200);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background: rgb(28, 28, 28); 
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+header h1 {
+    animation: colorChange 2s infinite; 
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: rgb(255, 105, 180);
+    }
+    25% {
+        color: rgb(135, 206, 250);
+    }
+    50% {
+        color: rgb(173, 216, 230);
+    }
+    75% {
+        color: rgb(102, 204, 255); 
+    }
+    100% {
+        color: rgb(255, 105, 180);
+    }
+}
+
+main {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid rgb(173, 216, 230); 
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li strong {
+    color: rgb(255, 105, 180);
+}
+
+ul li code {
+    background: rgb(60, 60, 60); 
+    color: rgb(255, 255, 255);
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+pre code {
+    display: block;
+    background: rgb(34, 34, 34); 
+    color: rgb(173, 216, 230);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.python-lib {
+    background: rgb(34, 34, 34);
+    color: rgb(173, 216, 230);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: rgb(135, 206, 250); 
+    text-shadow: 0 0 5px rgb(135, 206, 250); 
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+footer {
+    background: rgb(28, 28, 28); 
+    color: rgb(200, 200, 200);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.contact a {
+    color: rgb(102, 204, 255); 
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact a:hover {
+    color: rgb(70, 130, 180);
+    transform: scale(1.05);
+}
+
+.social-media a {
+    color: rgb(255, 99, 71);
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: rgb(102, 204, 255); 
+    transform: scale(1.2);
+}
+
+.link {
+    color: rgb(173, 216, 230)
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link:hover {
+    color: rgb(135, 206, 250) 
+    text-shadow: 0 0 5px rgb(135, 206, 250);
+}
+
+strong {
+    color: rgb(255, 105, 180);
+}
+
+h2 {
+    color: rgb(135, 206, 250);
+}
+
+footer .contact a, footer .social-media a {
+    color: rgb(255, 99, 71);
+}
+
+footer .social-media a {
+    color: rgb(255, 99, 71);
+}
+
+footer .contact a {
+    color: rgb(102, 204, 255);
+}
+
+ul li a {
+    color: rgb(102, 204, 255); 
+}
+
+ul li a:hover {
+    color: rgb(135, 206, 250); 
+}
+
+ul li a:visited {
+    color: rgb(0, 0, 139);
+}
+
